@@ -1,4 +1,6 @@
-FROM alpine:latest
+#FROM alpine:latest
+FROM alpine:3.18
+
 RUN apk add --no-cache php81 php81-fpm nginx
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY chat /var/www/html/
